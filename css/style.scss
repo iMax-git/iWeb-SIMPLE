@@ -1,0 +1,268 @@
+
+[data-theme="light"]{
+  --primary: #ffffff;
+  --primary-hover: #e77518;
+  --primary-focus: rgba(216, 27, 96, 0.125);
+  --primary-inverse: #000;
+
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+
+  --settings-background: url("/assets/images/banner.jpg");
+  --h1-color: var(--primary);
+  --color-1: #26272b;
+  --color-2: #2b2d3b;
+  --color-3: #14141a;
+  --color-4: #131925;
+  --color-5: rgba(19,25,37, 0.85);
+  --color-6: #3e4bd3;
+  --color-7: #5865f2;
+  --color-8: #8e8e93;
+  --text-color-1: #ffffff;
+  --text-color-2: #745bf5;
+  --text-color-3: #9391B6;
+  --text-color-4: #ffffff;
+  --text-color-5: #C1BEDA;
+  --text-color-6: #9692AB;
+  --accordion-open-summary-color: #e77518;
+  --accordion-active-summary-color: var(--primary-inverse);
+}
+
+[data-theme="dark"] {
+  --primary: #8c8c8c;
+  --primary-hover: #e77518;
+  --primary-focus: rgba(57, 73, 171, 0.25);
+  --primary-inverse: #FFF;
+
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+
+  --settings-background: url("/assets/images/banner.jpg");
+  --color-1: #26272b;
+  --color-2: #2b2d3b;
+  --color-3: #14141a;
+  --color-4: #131925;
+  --color-5: rgba(19,25,37, 0.85);
+  --color-6: #3e4bd3;
+  --color-7: #5865f2;
+  --color-8: #8e8e93;
+  --text-color-1: #ffffff;
+  --text-color-2: #C9BFFD;
+  --text-color-3: #9391B6;
+  --text-color-4: #ffffff;
+  --text-color-5: #C1BEDA;
+  --text-color-6: #9692AB;
+
+}
+
+
+body{
+  background: linear-gradient(0deg, var(--color-3) 0%,var(--color-3) 30%, var(--color-3) 40%,var(--color-5) 100%),var(--settings-background);
+  .header-container{
+    nav{
+      padding: 0 20px;
+      ul {
+        li {
+          a {
+            color: var(--text-color-1);
+            &:hover{
+              color: var(--primary-hover);
+            }
+          }
+        }
+      }
+    }
+
+    header{
+      display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      margin: 5vw;
+
+      p{
+        color: var(--text-color-2);
+        margin: 2vw
+      }
+    }
+  }
+
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+    section{
+      margin: 5vh;
+
+      .discord-card{
+        background: var(--color-6);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+
+        .card-header{
+          display: flex;
+          justify-content: center;
+            align-items: center;
+          padding: 10px;
+          h3{
+            color: var(--text-color-1);
+            margin: 0;
+            font-size: 1rem;
+          }
+        }
+
+        svg{
+          width: 100%;
+          height: 100%;
+          fill: var(--color-7);
+          position: relative;
+          top: 5px;
+        }
+
+        .card-body{
+          background-color: var(--color-7);
+          border-radius: 0 0 10px 10px;
+          display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+          .info{
+            .titre{
+              color: var(--text-color-1);
+              font-size: 1.2em;
+              font-weight: 600;
+            }
+            p{
+                color: var(--text-color-1);
+                font-size: 0.8rem;
+                margin: 0;
+            }
+          }
+
+          .button{
+            border-radius: 5px;
+            color: var(--text-color-1);
+            font-size: 0.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            background: var(--color-6);
+            border: 1px solid var(--color-6);
+            &:hover{
+              background: var(--color-7);
+              border: 1px solid var(--color-6);
+            }
+          }
+        }
+      }
+      h1{
+        color: var(--text-color-1);
+        margin: 2vw;
+      }
+      p{
+        color: var(--text-color-2);
+        margin: 2vw;
+      }
+
+      .carousel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 5vh;
+
+        .carousel-item{
+          margin: 10px;
+          width: 20%;
+          img {
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            opacity: 0.5;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .info-card article {
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        article{
+          box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+          margin: 10px;
+          h3 i{
+            color: var(--h3-color);
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+
+
+    .staff ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5vw;
+            img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            }
+            h3{
+            color: var(--primary-inverse);
+            margin: 0;
+            font-size: 1rem;
+            }
+            p{
+            color: var(--text-color-2);
+            margin: 0;
+            font-size: 0.8rem;
+            }
+        }
+    }
+  }
+
+}

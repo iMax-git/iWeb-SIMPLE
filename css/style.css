@@ -1,0 +1,232 @@
+[data-theme=light] {
+  --primary: #ffffff;
+  --primary-hover: #e77518;
+  --primary-focus: rgba(216, 27, 96, 0.125);
+  --primary-inverse: #000;
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+  --settings-background: url("/assets/images/banner.jpg");
+  --h1-color: var(--primary);
+  --color-1: #26272b;
+  --color-2: #2b2d3b;
+  --color-3: #14141a;
+  --color-4: #131925;
+  --color-5: rgba(19,25,37, 0.85);
+  --color-6: #3e4bd3;
+  --color-7: #5865f2;
+  --color-8: #8e8e93;
+  --text-color-1: #ffffff;
+  --text-color-2: #745bf5;
+  --text-color-3: #9391B6;
+  --text-color-4: #ffffff;
+  --text-color-5: #C1BEDA;
+  --text-color-6: #9692AB;
+  --accordion-open-summary-color: #e77518;
+  --accordion-active-summary-color: var(--primary-inverse);
+}
+
+[data-theme=dark] {
+  --primary: #8c8c8c;
+  --primary-hover: #e77518;
+  --primary-focus: rgba(57, 73, 171, 0.25);
+  --primary-inverse: #FFF;
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+  --settings-background: url("/assets/images/banner.jpg");
+  --color-1: #26272b;
+  --color-2: #2b2d3b;
+  --color-3: #14141a;
+  --color-4: #131925;
+  --color-5: rgba(19,25,37, 0.85);
+  --color-6: #3e4bd3;
+  --color-7: #5865f2;
+  --color-8: #8e8e93;
+  --text-color-1: #ffffff;
+  --text-color-2: #C9BFFD;
+  --text-color-3: #9391B6;
+  --text-color-4: #ffffff;
+  --text-color-5: #C1BEDA;
+  --text-color-6: #9692AB;
+}
+
+body {
+  background: linear-gradient(0deg, var(--color-3) 0%, var(--color-3) 30%, var(--color-3) 40%, var(--color-5) 100%), var(--settings-background);
+}
+body .header-container nav {
+  padding: 0 20px;
+}
+body .header-container nav ul li a {
+  color: var(--text-color-1);
+}
+body .header-container nav ul li a:hover {
+  color: var(--primary-hover);
+}
+body .header-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin: 5vw;
+}
+body .header-container header p {
+  color: var(--text-color-2);
+  margin: 2vw;
+}
+body main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main section {
+  margin: 5vh;
+}
+body main section .discord-card {
+  background: var(--color-6);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+body main section .discord-card .card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+body main section .discord-card .card-header h3 {
+  color: var(--text-color-1);
+  margin: 0;
+  font-size: 1rem;
+}
+body main section .discord-card svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--color-7);
+  position: relative;
+  top: 5px;
+}
+body main section .discord-card .card-body {
+  background-color: var(--color-7);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+body main section .discord-card .card-body .info .titre {
+  color: var(--text-color-1);
+  font-size: 1.2em;
+  font-weight: 600;
+}
+body main section .discord-card .card-body .info p {
+  color: var(--text-color-1);
+  font-size: 0.8rem;
+  margin: 0;
+}
+body main section .discord-card .card-body .button {
+  border-radius: 5px;
+  color: var(--text-color-1);
+  font-size: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  background: var(--color-6);
+  border: 1px solid var(--color-6);
+}
+body main section .discord-card .card-body .button:hover {
+  background: var(--color-7);
+  border: 1px solid var(--color-6);
+}
+body main section h1 {
+  color: var(--text-color-1);
+  margin: 2vw;
+}
+body main section p {
+  color: var(--text-color-2);
+  margin: 2vw;
+}
+body main section .carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh;
+}
+body main section .carousel .carousel-item {
+  margin: 10px;
+  width: 20%;
+}
+body main section .carousel .carousel-item img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+body main section .carousel .carousel-item img:hover {
+  opacity: 1;
+}
+body main .info-card article .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .info-card article .container img {
+  width: 100%;
+  height: 100%;
+}
+body main .info-card article .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .info-card article .card-container article {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+body main .info-card article .card-container article h3 i {
+  color: var(--h3-color);
+  margin-right: 10px;
+}
+body main .staff ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body main .staff ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vw;
+}
+body main .staff ul li img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+body main .staff ul li h3 {
+  color: var(--primary-inverse);
+  margin: 0;
+  font-size: 1rem;
+}
+body main .staff ul li p {
+  color: var(--text-color-2);
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */
